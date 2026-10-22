@@ -56,8 +56,16 @@ That is deliberate. Cleaning starts in week 3. This week is understanding plus f
 - [ ] **Task 1 - Write the discovery brief** (ID `B1.1`): Read the client story in `docs/01-project-brief.md`, section 1. Write a one page discovery brief. It must cover: what we are building, who uses it, what questions it must answer, what is still unclear, and what "done" looks like. Use plain language, as if the client will read it.
   **Commit:** `discovery/discovery_brief.md`, open a pull request for peer review.
 
+  our client is a due diligence company.if they want start business with thier customers first they will check three things about their customers.first is the customer company is currently active or working and second is is this company involved before or now in any financial trouble and third is what is the current status of this company in thier respective state and thier industry.our client is now working manually to understand this things and its time consuming and very chance to get wrong information.they asking to us they want all this datas in a one platform which is automatically updates and simple interface for a non-tech guy can also use.we are unclear about where will we get this datas and is it opensource and how the datatype look like.
+
 - [ ] **Task 2 - List the open questions** (ID `B1.2`): Write down the five questions you would ask the client if you had thirty minutes with them. Focus on things the brief cannot decide alone, like how far back the history must go, and what "risk" means to them.
   **Commit:** append to `discovery/discovery_brief.md` in an "Open Questions" section, update the same pull request.
+
+   1:how frequently you want updates on dashboard?
+   2:do you have any specification or any kind of industries you want to specify?
+   3:do you have any specific time period which is companies registerd or do you want all available companies in india?
+   4:what do you expect from us in end of production can you give me a image of your imagination?
+   5:how much history you want keep in dashboard?maximum or minimum?
 
 - [ ] **Task 3 - Draw the whole system on one page** (ID `A1.1`): Draw the end-to-end picture: the four data sources on the left, the pipeline in the middle (files, Snowflake, the dashboard), and the people who use it on the right. Label each source with its format (CSV, PDF, HTML table, CSV). A non-technical person must be able to read it without you explaining it. Use Mermaid in a Markdown file - it renders on GitHub and is easy to review in a pull request - or any diagram tool you already know.
   **Commit:** `design/context_diagram.md` (embed the diagram), add it to the discovery brief pull request.
@@ -73,8 +81,20 @@ That is deliberate. Cleaning starts in week 3. This week is understanding plus f
 - [ ] **Task 4 - Summarise the four sources** (ID `B2.1`): For each of the four data sources, write three sentences in your own words: what it is, which client question it answers, and how it arrives (file type and cadence). No copying from `docs/01-project-brief.md`.
   **Commit:** `discovery/source_summary.md`, open a pull request.
 
+we got four source of datas  which is coming from official government sites or other trusted open sources.
+
+1:first is MCA which is ministry of corperate affairs they publish all data of every registred companies details in every month.it include company details such as  CIN,active-status of companies,company name etc.. .this datas will help us to sortout their first needs.our challenge is this datas coming as csv and raw data.we want first clean them up before inserting into our product.
+
+2:second is IBBI insolvency record which is datas of all companies details about any financial crisis.when a company cannot pay its debt it will proceed a legal process called the CIRP,then IBBI publish the list of this companies.and this datas will give information about their case as hearing date,total amount recovered,which court is helding,also it has CIN which will help to join MCA data to this and it will answer the second question about the compnies involved in any financial crisis.but this data coming as pdf which is only readble not for editing and no csv and we will need a python program to extract data from source
+
+3:third is MCA Corporate Data Management Portal it shows us a summory of every company is specific place which is helpful to figure out how this company working and status compared to its own compatitors and it will help to understand is this companies in right place to run their business to looking at how much active companies in that specific place and this will solve the third question of the client,also this datas in a webpage as HTML tables we will need another python program to get datas
+
+4:RBI policy rate data this datas from indias'centrel bank.it show the repo rate and It lets the platform answer questions like "what was the repo rate when this company was incorporated".
+its not our main data source it will use as a support for our source and it coming as downalodble csv or excel and datas will need light cleaning also
 - [ ] **Task 5 - Write the onboarding paragraph** (ID `B2.2`): Write the one paragraph business ask you would hand to a new teammate joining the project, so they understand the project without reading anything else.
   **Commit:** `discovery/teammate_onboarding.md`, open a pull request.
+
+  our client is a due diligence company.Due diligence means checking a business before trusting it.thier customers are banks,lenders and etc..,we want check about their customers geunity and background before us they use manual method which is time consuming and chance to get wrong datas now they want to create a simple product to sortout this problem and our product need to be very simple evem a non-tech guy can use it and we want figure out where will the datas will get and how will insert into dashboard
 
 
 ---
