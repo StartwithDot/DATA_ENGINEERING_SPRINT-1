@@ -6,7 +6,7 @@ Read this whole file before you start anything. Then work through the task group
 
 ## 1. What We Are Doing
 
-This week you set up the tools you will use for all 15 weeks. You also learn what the client really needs: you write a short discovery brief, list open questions, draw the whole system on one page, and summarise the four data sources.
+This week you set up the tools you will use for all 15 weeks. You also learn what the client really needs: you write a short discovery brief, list open questions, draw the whole system on one page, and summarise the four data sources..
 
 The task groups this week:
 
