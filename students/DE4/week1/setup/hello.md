@@ -1,2 +1,0 @@
-nagatoai
-setup check

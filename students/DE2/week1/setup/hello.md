@@ -1,1 +1,0 @@
-nived setup check

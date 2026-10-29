@@ -1,3 +1,0 @@
-SELECT CURRENT_VERSION();
-
--- I Saw This 10.38.102

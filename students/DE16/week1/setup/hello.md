@@ -1,1 +1,0 @@
-shahid setup check
