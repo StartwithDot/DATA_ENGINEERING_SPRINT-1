@@ -1,0 +1,1 @@
+leo setup check

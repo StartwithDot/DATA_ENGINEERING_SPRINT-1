@@ -1,0 +1,12 @@
+## MCA :
+ Ministry of coperate affairs is resposible  for registering companies in india . it assign a unique CIN number to each companies it also coantains attributes such as company current status,registartion date . This dataset is used because it answers the question whether the company is actually regirsted, active ,total assets . The data set arrives in ZIP file each ZIP conatins the compaies registered in the corresponding ROC.
+
+## IBBI :
+ Is responsible for pulishing the insolvency records of the companies that are going through financial crirs.this dataset is used because it give the whether the company is going through a financial crisis,total debts, total debts recovered ,we can map the data with MCA using CIN column. It arrives as a pdf file , we need to use python script to extract the data.
+
+## MCA Corporate Data Management Portal :
+ It contains the statistical rerprestion of company status accros different states , also the statistics of how many active compnay across different sectors in th india.This data can be used suppose if the current active company in a state is high as compared to other sectors which shows high acceptance by the people ,which will guarantee the the growth of that company so that lenders,banks can give money. It comes with statistical infromation in the site so we need to do web scrapping to eract the data using pyhton tools such as butterfly soup.
+
+## RBI :
+ It sets the repo rates to the banks,suppose if the economy is going through a inflation the RBI will set the repo rates high which will forces the banks to lend monwy with high interest also if the economy is going to crisis the RBI will reduce the rates so that banks can reduce the interest rate. Knowing the repo rate at the exact time a company was registered gives lenders a quick snapshot of the economic condition — whether money was expensive or cheap when that business first opened its doors.It comes as a CSV file but it needs some 
+ NOTE :  For RBI, add one note: the RBI data portal DBIE is now at https://data.rbi.org.in, and the policy rate series only lists the days when the rate changed, so a missing month does not mean missing data. Our downloaded RBI data ends in 2024. That is OK. RBI is background only.

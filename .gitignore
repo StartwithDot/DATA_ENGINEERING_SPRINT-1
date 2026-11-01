@@ -18,3 +18,7 @@ data/raw/
 dbt_packages/
 logs/
 target/
+
+rsa_key*
+*.p8
+*.pub
