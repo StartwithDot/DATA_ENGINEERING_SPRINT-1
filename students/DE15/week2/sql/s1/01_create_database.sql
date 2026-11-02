@@ -1,0 +1,10 @@
+CREATE DATABASE DE15_WEEEK2;
+USE DATABASE DE15_WEEEK2;
+
+CREATE SCHEMA DE15_WEEEK2.BRONZE;
+CREATE SCHEMA DE15_WEEEK2.SILVER;
+CREATE SCHEMA DE15_WEEEK2.GOLD;
+
+-- BRONZE: holse the raw data
+-- SILVER: holds the cleaned data
+-- GOLD: holds the data that goto the reporting purpose

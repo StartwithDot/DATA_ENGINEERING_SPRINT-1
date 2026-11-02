@@ -1,0 +1,11 @@
+we got four source of datas  which is coming from official government sites or other trusted open sources.
+1:first is MCA which is ministry of corperate affairs they publish all data of every registred companies details in every month.it include company details such as  CIN,active-status of companies,company name etc.. .this datas will help us to sortout their first needs.our challenge is this datas coming as csv and raw data.we want first clean them up before inserting into our product.
+
+2:second is IBBI insolvency record which is datas of all companies details about any financial crisis.when a company cannot pay its debt it will proceed a legal process called the CIRP,then IBBI publish the list of this companies.and this datas will give information about their case as hearing date,total amount recovered,which court is helding,also it has CIN which will help to join MCA data to this and it will answer the second question about the compnies involved in any financial crisis.but this data coming as pdf which is only readble not for editing and no csv and we will need a python program to extract data from source
+
+3:third is MCA Corporate Data Management Portal it shows us a summory of every company is specific place which is helpful to figure out how this company working and status compared to its own compatitors and it will help to understand is this companies in right place to run their business to looking at how much active companies in that specific place and this will solve the third question of the client,also this datas in a webpage as HTML tables we will need another python program to get datas
+
+4:RBI policy rate data this datas from indias'centrel bank.it show the repo rate and It lets the platform answer questions like "what was the repo rate when this company was incorporated".
+its not our main data source it will use as a support for our source and it coming as downalodble csv or excel and datas will need light cleaning also
+
+ RBI data portal DBIE is now at https://data.rbi.org.in,
