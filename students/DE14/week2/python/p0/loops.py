@@ -8,7 +8,7 @@ for state in states:
         print(state)
         count = count + 1
     else:
-        print(f"Not a K state: {state}")   
+        print("Not a K state:", state)   
 
-print("states starting with K: {count}") 
-print("Total states: {total_count}")  
+print("states starting with K:", count) 
+print("Total states:", total_count)  
