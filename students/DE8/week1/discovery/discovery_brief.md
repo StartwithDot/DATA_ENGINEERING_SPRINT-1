@@ -15,3 +15,10 @@ They want the whole thing to refresh on a regular schedule as i noticed the data
 An automated single dashboard that refreshes daily for daily analysts , lenders, banks, and procurement teams for do finacial due diligence on companies through a user-friendly dashboard that a non technical person can use.
 
 
+## Open Questions
+1. Is the data source files having a common pattern in names to trackdown easily when automation?
+2. how long should the past data stored or do we needed to transfer and store it on any other database as registry?
+3. Should the platform allow  data to be downloadable for users ?
+4. Should the platform give alerts or highlights on if a company going through finacial risks?
+5. should we include a list of low risk companies to lend,invest or buying ?
+6. what all are the important ui preferences ?
