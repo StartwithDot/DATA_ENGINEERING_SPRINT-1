@@ -8,5 +8,5 @@ flowchart LR
     G[AIRFLOW] --> P
     G[AIRFLOW] --> E
     E[DBT] --> F[METABASE]
-    X[USER] --> F
+    F -->X[USER]
 ```
