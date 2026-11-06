@@ -15,3 +15,7 @@ def main():
 
 if __name__ == "__main__":
         main()
+        #this function helps to count long company names. it goes through each name and add 1 to count 
+        #it has a list of companies and we want to count how many names are long
+        
+
