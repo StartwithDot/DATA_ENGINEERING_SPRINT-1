@@ -5,6 +5,12 @@ __pycache__/
 *.env
 .env
 
+# Virtual Environments
+.venv/
+venv/
+env/
+
+
 # Data
 data/raw/
 *.csv
